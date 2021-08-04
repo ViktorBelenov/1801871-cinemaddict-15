@@ -1,5 +1,5 @@
 const Films = {
-  THEDANCEOFLIFE  :`<article class="film-card">
+  THE_DANCE_OF_LIFE  :`<article class="film-card">
     <h3 class="film-card__title">The Dance of Life</h3>
     <p class="film-card__rating">8.3</p>
     <p class="film-card__info">
@@ -16,7 +16,7 @@ const Films = {
       <button class="film-card__controls-item film-card__controls-item--favorite" type="button">Mark as favorite</button>
     </div>
   </article>`,
-  SAGEBRUSHTRAIL  :`<article class="film-card">
+  SAGEBRUSH_TRAIL  :`<article class="film-card">
   <h3 class="film-card__title">Sagebrush Trail</h3>
   <p class="film-card__rating">3.2</p>
   <p class="film-card__info">
@@ -33,7 +33,7 @@ const Films = {
     <button class="film-card__controls-item film-card__controls-item--favorite" type="button">Mark as favorite</button>
   </div>
   </article>`,
-  THEMANWITHTHEGOLDENARM  :`<article class="film-card">
+  THE_MAN_WITH_THE_GOLDEN_ARM  :`<article class="film-card">
           <h3 class="film-card__title">The Man with the Golden Arm</h3>
           <p class="film-card__rating">9.0</p>
           <p class="film-card__info">
@@ -50,7 +50,7 @@ const Films = {
             <button class="film-card__controls-item film-card__controls-item--favorite" type="button">Mark as favorite</button>
           </div>
         </article>`,
-  SANTACLAUSCONQUERSTHEMARTIANS  :`<article class="film-card">
+  SANTA_CLAUS_CONQUERS_THE_MARTIANS  :`<article class="film-card">
   <h3 class="film-card__title">Santa Claus Conquers the Martians</h3>
   <p class="film-card__rating">2.3</p>
   <p class="film-card__info">
@@ -67,7 +67,7 @@ const Films = {
     <button class="film-card__controls-item film-card__controls-item--favorite film-card__controls-item--active" type="button">Mark as favorite</button>
   </div>
   </article>`,
-  POPEYETHESAILORMEETSSINBADTHESAILOR:`<article class="film-card">
+  POPEYE_THE_SAILOR_MEETS_SINBAD_THE_SAILOR:`<article class="film-card">
   <h3 class="film-card__title">Popeye the Sailor Meets Sindbad the Sailor</h3>
   <p class="film-card__rating">6.3</p>
   <p class="film-card__info">
@@ -85,7 +85,7 @@ const Films = {
   </div>
   </article>
   </div>`,
-  THEGREATFLAMARION:`<article class="film-card">
+  THE_GREAT_FLAMARION:`<article class="film-card">
   <h3 class="film-card__title">The Great Flamarion</h3>
   <p class="film-card__rating">8.9</p>
   <p class="film-card__info">
@@ -102,7 +102,7 @@ const Films = {
     <button class="film-card__controls-item film-card__controls-item--favorite" type="button">Mark as favorite</button>
   </div>
   </article>`,
-  MADEFOREACHOTHER:`<article class="film-card">
+  MADE_FOR_EACH_OTHER:`<article class="film-card">
   <h3 class="film-card__title">Made for Each Other</h3>
   <p class="film-card__rating">5.8</p>
   <p class="film-card__info">

@@ -2,45 +2,45 @@ import { createUserRankTemplate } from './view/user-rank';
 import {createMenuTemplate} from './view/menu';
 import {createSortingTemplate} from './view/sorting';
 import { createFilmsContainerTemplate } from './view/films-conatiner';
-import {Films} from './view/film-list';
+import {Films} from './view/films';
 import {createShowMoreButtonTemplate} from './view/show-more-button';
-import {createFilmPopupTemplate} from './view/popup';
-import {createFooterStatsTemplate} from './view/footer-films-stat';
+import {createFilmPopupTemplate} from './view/film-popup';
+import {createFooterStatsTemplate} from './view/footer-stats';
 
 
-const userRankPlace = document.querySelector('.header');
+const headerPlace = document.querySelector('.header');
 const mainPlace = document.querySelector('.main');
 const footerPlace = document.querySelector('.footer');
 
 
-const createMarkup = (container, markup, place) => {
-  container.insertAdjacentHTML(place, markup);
+const render = (container, template, place) => {
+  container.insertAdjacentHTML(place, template);
 };
 
-createMarkup(userRankPlace, createUserRankTemplate(),'beforeend');
-createMarkup(mainPlace, createMenuTemplate(),'beforeend');
-createMarkup(mainPlace, createSortingTemplate(), 'beforeend');
-createMarkup(mainPlace, createFilmsContainerTemplate(),'beforeend');
+render(headerPlace, createUserRankTemplate(),'beforeend');
+render(mainPlace, createMenuTemplate(),'beforeend');
+render(mainPlace, createSortingTemplate(), 'beforeend');
+render(mainPlace, createFilmsContainerTemplate(),'beforeend');
 
 const filmsPlaces = document.querySelectorAll('.films-list__container');
 
-createMarkup(filmsPlaces[0],Films.THEDANCEOFLIFE,'beforeend');
-createMarkup(filmsPlaces[0],Films.SAGEBRUSHTRAIL,'beforeend');
-createMarkup(filmsPlaces[0],Films.THEMANWITHTHEGOLDENARM,'beforeend');
-createMarkup(filmsPlaces[0],Films.SANTACLAUSCONQUERSTHEMARTIANS,'beforeend');
-createMarkup(filmsPlaces[0],Films.POPEYETHESAILORMEETSSINBADTHESAILOR,'beforeend');
+render(filmsPlaces[0],Films.THE_DANCE_OF_LIFE,'beforeend');
+render(filmsPlaces[0],Films.SAGEBRUSH_TRAIL,'beforeend');
+render(filmsPlaces[0],Films.THE_MAN_WITH_THE_GOLDEN_ARM,'beforeend');
+render(filmsPlaces[0],Films.SANTA_CLAUS_CONQUERS_THE_MARTIANS,'beforeend');
+render(filmsPlaces[0],Films.POPEYE_THE_SAILOR_MEETS_SINBAD_THE_SAILOR,'beforeend');
 
 const filmListPlace = document.querySelector('.films-list');
 
-createMarkup(filmListPlace, createShowMoreButtonTemplate(), 'beforeend');
+render(filmListPlace, createShowMoreButtonTemplate(), 'beforeend');
 
 
-createMarkup(filmsPlaces[1],Films.THEMANWITHTHEGOLDENARM, 'beforeend');
-createMarkup(filmsPlaces[1],Films.THEGREATFLAMARION, 'beforeend');
+render(filmsPlaces[1],Films.THE_MAN_WITH_THE_GOLDEN_ARM, 'beforeend');
+render(filmsPlaces[1],Films.THE_GREAT_FLAMARION, 'beforeend');
 
-createMarkup(filmsPlaces[2],Films.SANTACLAUSCONQUERSTHEMARTIANS, 'beforeend');
-createMarkup(filmsPlaces[2],Films.MADEFOREACHOTHER, 'beforeend');
+render(filmsPlaces[2],Films.SANTA_CLAUS_CONQUERS_THE_MARTIANS, 'beforeend');
+render(filmsPlaces[2],Films.MADE_FOR_EACH_OTHER, 'beforeend');
 
-createMarkup(footerPlace, createFooterStatsTemplate(), 'beforeend');
-createMarkup(footerPlace, createFilmPopupTemplate(),'afterend');
+render(footerPlace, createFooterStatsTemplate(), 'beforeend');
+render(footerPlace, createFilmPopupTemplate(),'afterend');
 
